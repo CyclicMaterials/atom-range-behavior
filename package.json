@@ -1,6 +1,6 @@
 {
   "name": "@cyclic/atom-range-behavior",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Frederik Krautwald",
   "description": "Managing a numeric value within a given range.",
   "license": "MIT",
@@ -27,8 +27,7 @@
       "babelify"
     ]
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@cycle/core": "6.0.0-rc2",
     "@cycle/dom": "8.0.0-rc4",
