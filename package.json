@@ -1,0 +1,46 @@
+{
+  "name": "@cyclic/atom-range-behavior",
+  "version": "0.0.0",
+  "author": "Frederik Krautwald",
+  "description": "Managing a numeric value within a given range.",
+  "license": "MIT",
+  "bugs": "https://github.com/CyclicMaterials/atom-range-behavior/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyclicMaterials/atom-range-behavior"
+  },
+  "keywords": [
+    "cyclejs",
+    "behavior",
+    "Material Design"
+  ],
+  "dependencies": {
+    "@cycle/dom": "^8.0.0-rc2",
+    "rx": "^4.0.7"
+  },
+  "devDependencies": {
+    "babel": "5.8.29",
+    "chai": "^3.4.1",
+    "chai-virtual-dom": "^1.0.0",
+    "cli-release": "1.0.3",
+    "eslint": "1.0.0",
+    "eslint-config-cycle": "3.1.0",
+    "eslint-plugin-cycle": "1.0.2",
+    "eslint-plugin-no-class": "0.1.0",
+    "fast.js": "^0.1.1",
+    "glob": "^6.0.1",
+    "mocha": "2.3.3",
+    "validate-commit-message": "3.0.1",
+    "virtual-dom": "^2.1.1"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "test-js": "mocha --compilers js:babel/register 'src/**/*_test.js'",
+    "test": "npm run lint && npm run test-js",
+    "deps": "npm install && validate-commit-msg",
+    "start": "npm run deps",
+    "patch": "git checkout master && release patch && npm publish --access=public",
+    "minor": "git checkout master && release minor && npm publish --access=public",
+    "major": "git checkout master && release major && npm publish --access=public"
+  }
+}
