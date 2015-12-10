@@ -32,8 +32,7 @@ describe(`RangeBehavior`, () => {
     describe(`state-object`, () => {
       it(`should have <Number>value property`, (done) => {
         const propName = `value`
-        const props$ = Observable.just({})
-        const state$ = model({props$})
+        const state$ = model({})
         state$.subscribe(state => {
           expect(state).to.have.ownProperty(propName)
           expect(state[propName]).to.be.a(`number`)
@@ -44,8 +43,7 @@ describe(`RangeBehavior`, () => {
 
       it(`should have <Number>min property`, (done) => {
         const propName = `min`
-        const props$ = Observable.just({})
-        const state$ = model({props$})
+        const state$ = model({})
         state$.subscribe(state => {
           expect(state).to.have.ownProperty(propName)
           expect(state[propName]).to.be.a(`number`)
@@ -56,8 +54,7 @@ describe(`RangeBehavior`, () => {
 
       it(`should have <Number>max property`, (done) => {
         const propName = `max`
-        const props$ = Observable.just({})
-        const state$ = model({props$})
+        const state$ = model({})
         state$.subscribe(state => {
           expect(state).to.have.ownProperty(propName)
           expect(state[propName]).to.be.a(`number`)
@@ -68,8 +65,7 @@ describe(`RangeBehavior`, () => {
 
       it(`should have <Number>step property`, (done) => {
         const propName = `step`
-        const props$ = Observable.just({})
-        const state$ = model({props$})
+        const state$ = model({})
         state$.subscribe(state => {
           expect(state).to.have.ownProperty(propName)
           expect(state[propName]).to.be.a(`number`)
@@ -80,8 +76,7 @@ describe(`RangeBehavior`, () => {
 
       it(`should have <Number>ratio property`, (done) => {
         const propName = `ratio`
-        const props$ = Observable.just({})
-        const state$ = model({props$})
+        const state$ = model({})
         state$.subscribe(state => {
           expect(state).to.have.ownProperty(propName)
           expect(state[propName]).to.be.a(`number`)
