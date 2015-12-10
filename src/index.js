@@ -23,7 +23,7 @@ export default {
    * `step` | `{Number}` Specifies the value granularity of the range’s value. | `1`
    * `value` | `{Number}` The number that represents the current value. | `0`
    *
-   * @param {Object} {props$} A specification of:
+   * @param {Object} {props$} An optional specification of:
    *
    *     - *props$ :: Observable* An observable of object of properties.
    *

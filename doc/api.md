@@ -26,7 +26,7 @@ Property | Description | Default
 
 #### Arguments:
 
-- `{props$} :: Object` A specification of: 
+- `{props$} :: Object` An optional specification of: 
     - *props$ :: Observable* An observable of object of properties.
 
 #### Return:

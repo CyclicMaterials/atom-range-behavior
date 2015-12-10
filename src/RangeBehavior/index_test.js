@@ -19,7 +19,7 @@ describe(`RangeBehavior`, () => {
   })
 
   it(`should output a sinks-object`, () => {
-    const rangeBehavior = RangeBehavior({props$: Observable.just({})})
+    const rangeBehavior = RangeBehavior({})
     expect(rangeBehavior).to.be.an(`object`)
   })
 
@@ -56,21 +56,21 @@ describe(`RangeBehavior`, () => {
 
     describe(`ratioCalc`, () => {
       it(`should be a function`, () => {
-        const {ratioCalc} = RangeBehavior({props$: Observable.just({})})
+        const {ratioCalc} = RangeBehavior({})
         expect(ratioCalc).to.be.a(`function`)
       })
     })
 
     describe(`clampedValue`, () => {
       it(`should be a function`, () => {
-        const {clampedValue} = RangeBehavior({props$: Observable.just({})})
+        const {clampedValue} = RangeBehavior({})
         expect(clampedValue).to.be.a(`function`)
       })
     })
 
     describe(`stepCalc`, () => {
       it(`should be a function`, () => {
-        const {stepCalc} = RangeBehavior({props$: Observable.just({})})
+        const {stepCalc} = RangeBehavior({})
         expect(stepCalc).to.be.a(`function`)
       })
     })
